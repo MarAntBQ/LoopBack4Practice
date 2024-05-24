@@ -1,0 +1,13 @@
+{
+  "ids": {
+    "People": 5
+  },
+  "models": {
+    "People": {
+      "1": "{\"name\":\"string\",\"city\":\"string\",\"id\":\"1\"}",
+      "2": "{\"name\":\"string\",\"city\":\"string\",\"id\":\"2\"}",
+      "3": "{\"name\":\"string\",\"city\":\"string\",\"id\":\"3\"}",
+      "4": "{\"name\":\"string\",\"city\":\"string\",\"id\":\"4\"}"
+    }
+  }
+}

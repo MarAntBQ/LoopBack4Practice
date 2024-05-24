@@ -4,6 +4,12 @@ import {Entity, model, property} from '@loopback/repository';
 export class People extends Entity {
   @property({
     type: 'string',
+    id: true,
+  })
+  id?: string;
+
+  @property({
+    type: 'string',
   })
   name?: string;
 
