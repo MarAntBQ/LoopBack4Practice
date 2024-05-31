@@ -1,9 +1,13 @@
-function LoggerAndReturn<T>(thing: T) : T {
-  return thing;
+function getArray<T>(items: T[]): T[] {
+  return new Array<T>().concat(items);
 }
 
-//const message: string = LoggerAndReturn<string>('Hello World');
-const message: string = LoggerAndReturn('Hello World');
-const message2: number = LoggerAndReturn(2);
-console.log(message)
-console.log(message2)
+// let myNumArr = getArray<number>([100,20,300]);
+// let myStrArr = getArray<string>(['Hello', 'World']);
+let myNumArr = getArray([100,20,300]);
+let myStrArr = getArray(['Hello', 'World']);
+
+console.log(myNumArr)
+console.log(myStrArr)
+// myNumArr.push('Hello'); <- We can't push differenyt type
+// myStrArr.push(10); <- We can't push differenyt type
