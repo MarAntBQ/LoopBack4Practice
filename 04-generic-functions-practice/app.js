@@ -1,8 +1,8 @@
-var Helloworld = /** @class */ (function () {
-    function Helloworld(message, name) {
-        console.log(message + ' ' + name);
-    }
-    return Helloworld;
-}());
-var helloworld = new Helloworld('Welcome', 'Marco Antonio');
-console.log(helloworld);
+function LoggerAndReturn(thing) {
+    return thing;
+}
+//const message: string = LoggerAndReturn<string>('Hello World');
+var message = LoggerAndReturn('Hello World');
+var message2 = LoggerAndReturn(2);
+console.log(message);
+console.log(message2);

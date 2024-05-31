@@ -1,8 +1,9 @@
-class Helloworld {
-  constructor(message, name) {
-    console.log(message + ' ' + name);
-  }
+function LoggerAndReturn<T>(thing: T) : T {
+  return thing;
 }
 
-const helloworld = new Helloworld('Welcome', 'Marco Antonio');
-console.log(helloworld)
+//const message: string = LoggerAndReturn<string>('Hello World');
+const message: string = LoggerAndReturn('Hello World');
+const message2: number = LoggerAndReturn(2);
+console.log(message)
+console.log(message2)
